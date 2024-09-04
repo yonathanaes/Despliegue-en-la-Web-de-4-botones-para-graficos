@@ -9,7 +9,7 @@ hist_button = st.button('Construir histograma del kilometraje') # crear un botó
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('distribución del kilometraje')
+    st.header('Distribución del kilometraje')
     st.write('Variable odometer')               
     # crear un histograma de odomoter
     fig = px.histogram(df_vehiculos, x="odometer")            
@@ -23,7 +23,7 @@ hist_button = st.button('Construir histograma del año del modelo') # crear un b
         
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('distribución del año del modelo')
+    st.header('Distribución del año del modelo')
     st.write('Variable model_year')               
     # crear un histograma de odomoter
     fig = px.histogram(df_vehiculos, x="model_year")            

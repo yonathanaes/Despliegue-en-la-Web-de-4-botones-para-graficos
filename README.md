@@ -1,6 +1,8 @@
 # Proyecto_6
 Proyecto sobre vehiculos en EEUU
 
+URL de render : https://proyecto-6-2r1v.onrender.com/
+
 Descripción del proyecto: 
 
 Paso 1: se comenzo con los siguientes puntos.
@@ -38,3 +40,4 @@ Botones:
 Conclución del proyecto:
 El proyecto se trabajo en 4 pasos desde crear un repositorio, clonarlo en VCcode, crear un ambiente virtual donde pueda descargar mis librerias especificas para este proyecto y un trabajar con un interprete de python.
 Esto me permitio importar librerias por ejemplo plotly.express para crear botones y graficos como histogramas, la libreria streamlit me permite desplegarlo localmente y posterior en la web mediante render.
+ 

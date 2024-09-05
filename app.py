@@ -5,11 +5,11 @@ import plotly.express as px
 df_vehiculos = pd.read_csv('./vehicles_us.csv')
 
 # Boton del histograma kilometraje
+st.header('Distribución del kilometraje')
 hist_button = st.button('Construir histograma del kilometraje') # crear un botón
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('Distribución del kilometraje')
     st.write('Variable odometer')               
     # crear un histograma de odomoter
     fig = px.histogram(df_vehiculos, x="odometer")            
@@ -19,11 +19,11 @@ if hist_button: # al hacer clic en el botón
 
 
 # Boton del histograma año del modelo
+st.header('Distribución del año del modelo')
 hist_button = st.button('Construir histograma del año del modelo') # crear un botón
         
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('Distribución del año del modelo')
     st.write('Variable model_year')               
     # crear un histograma de odomoter
     fig = px.histogram(df_vehiculos, x="model_year")            
@@ -32,11 +32,11 @@ if hist_button: # al hacer clic en el botón
 
 
 # Boton del gráfico de dispersión de model_year y price
+st.header('Dispersión de la variable año del modelo y precio')
 hist_button = st.button('Construir gráfico de dispersión del año del modelo y precio') # crear un botón
         
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('Dispersión de la variable año del modelo y precio')
     st.write('Variables model_year y price')               
     # crear un gráfico de dispersión
     fig = px.scatter(df_vehiculos, x="model_year", y="price")            
@@ -45,11 +45,11 @@ if hist_button: # al hacer clic en el botón
 
 
 # Boton del gráfico de dispersión de odometer y price
+st.header('Dispersión de la variable kilometraje  y precio')
 hist_button = st.button('Construir gráfico de dispersión del kilometraje y precio') # crear un botón
         
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.header('Dispersión de la variable kilometraje  y precio')
     st.write('Variables odometer y price')               
     # crear un gráfico de dispersión
     fig = px.scatter(df_vehiculos, x="odometer", y="price")            
